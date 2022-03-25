@@ -1,5 +1,14 @@
 import React from 'react';
 import Character from './components/Character'
+import styled from 'styled-components';
+
+const StyleApp = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -8,10 +17,10 @@ const App = () => {
   // sync up with, if any.
 
   return (
-    <div className="App">
+    <StyleApp className="App">
       <h1 className="Header">Characters</h1>
       <Character />
-    </div>
+    </StyleApp>
   );
 }
 
